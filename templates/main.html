@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<font color="#000000" face="Century Gothic">
+<h1 style="text-align: center;">Категории товаров</h1>
+</font>
+{% for category in categories %}
+<i>
+<h3 class="m-5" style="text-align: center;">
+<a href=/{{category}}>{{ category }}</a>
+</h3>
+</i>
+{% endfor %}
+{% endblock %}
